@@ -41,6 +41,9 @@ class _MyAppState extends State<MyApp> {
             children: [
               Question(questions.elementAt(_questionIndex)),
               ElevatedButton(
+                style: ButtonStyle(
+                    backgroundColor:
+                        MaterialStateProperty.all(Colors.green[700])),
                 onPressed: () => _answerQuestion(),
                 child: const Text("Answer 1"),
               ),
